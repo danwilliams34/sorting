@@ -9,7 +9,9 @@ def swap(alist, index):
     alist[index] = b # sets the variable of index to b
     alist[index+1] = a # sets the variable of index+1 to a 
     return (alist) # returns alist
-
+    '''
+    This functions swaps an entire list to the correct order
+    '''
 def bsort(alist): # tells the computer that its a bubble sort
     swaps = True # Creats variable called swaps and makes the item in the variable True
     while swaps: # When swaps contains True, continue loop
@@ -17,8 +19,8 @@ def bsort(alist): # tells the computer that its a bubble sort
         for i in range(len(alist)-1):
             if (alist[i] > alist[i+1]):
                 alist = swap(alist, i)
-                swaps = True
-    return (alist)
+                swaps = True # The variable swaps contains true
+    return (alist) #retursn the list in the correct order
     '''
     This function swaps a list to the correct order
     '''
