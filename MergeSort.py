@@ -12,14 +12,16 @@ def swap(alist, index):
 
 def bsort(alist): # tells the computer that its a bubble sort
     swaps = True # Creats variable called swaps and makes the item in the variable True
-    while swaps:
+    while swaps: # When swaps contains True, continue loop
         swaps = False # Creates a variable called swaps and the item to False
         for i in range(len(alist)-1):
             if (alist[i] > alist[i+1]):
                 alist = swap(alist, i)
                 swaps = True
     return (alist)
-
+    '''
+    This function swaps a list to the correct order
+    '''
 def mini(alist):
     answer = alist[0]
     for item in alist:
