@@ -10,10 +10,10 @@ def swap(alist, index):
     alist[index+1] = a # sets the variable of index+1 to a 
     return (alist) # returns alist
 
-def bsort(alist):
-    swaps = True
+def bsort(alist): # tells the computer that its a bubble sort
+    swaps = True # Creats variable called swaps and makes the item in the variable True
     while swaps:
-        swaps = False
+        swaps = False # Creates a variable called swaps and the item to False
         for i in range(len(alist)-1):
             if (alist[i] > alist[i+1]):
                 alist = swap(alist, i)
