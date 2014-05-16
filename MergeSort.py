@@ -20,7 +20,7 @@ def bsort(alist): # tells the computer that its a bubble sort
             if (alist[i] > alist[i+1]):
                 alist = swap(alist, i)
                 swaps = True # The variable swaps contains true
-    return (alist) #retursn the list in the correct order
+    return (alist) # returns the list in the correct order
     '''
     This function swaps a list to the correct order
     '''
