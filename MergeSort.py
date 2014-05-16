@@ -16,9 +16,9 @@ def bsort(alist): # tells the computer that its a bubble sort
     swaps = True # Creats variable called swaps and makes the item in the variable True
     while swaps: # When swaps contains True, continue loop
         swaps = False # Creates a variable called swaps and the item to False
-        for i in range(len(alist)-1):
-            if (alist[i] > alist[i+1]):
-                alist = swap(alist, i)
+        for i in range(len(alist)-1): # Sets up the iteration
+            if (alist[i] > alist[i+1]): # If the index of alist is greater than the index of alist index+1 then swap
+                alist = swap(alist, i) # if theyre in the wrong order, swap them
                 swaps = True # The variable swaps contains true
     return (alist) # returns the list in the correct order
     '''
